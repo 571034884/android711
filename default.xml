@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+ 
+  <remote  name="origin"
+           fetch="git://192.168.1.126" />
+  <default revision="master"
+           remote="origin"
+           sync-j="4" />
+ 
+  <project path="build" name="platform/build" groups="pdk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
+ 
+  ... ...
+ 
+</manifest>
